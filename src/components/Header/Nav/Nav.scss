@@ -1,0 +1,27 @@
+
+.nav {
+  display: flex;
+  gap: 48px;
+  &__link {
+    position: relative;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: rgba(0, 0, 0, 0.5);
+    &-active {
+      font-weight: 600;
+      color: #BD7048;
+      &:after {
+        content: '';
+        top: 25px;
+        position: absolute;
+        display: block;
+        bottom: 0;
+        right: 0;
+        width: 31px;
+        height: 1px;
+        background-color: #BD7048;
+      }
+    }
+  }
+}
