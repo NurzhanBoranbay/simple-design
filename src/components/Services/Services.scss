@@ -28,8 +28,19 @@
       color: #000000;
     }
     &-steps {
-      margin-left: 37px;
-      margin-top: 44px;
+      position: relative;
+      padding-left: 37px;
+      padding-top: 44px;
+      &:before {
+        content: '';
+        display: flex;
+        position: absolute;
+        top: 44px;
+        left: 0;
+        width: 1px;
+        height: 108px;
+        background-color: #9F3535;
+      }
       .services-span:not(:first-child) {
         margin-bottom: 4px;
       }
@@ -100,6 +111,27 @@
         position: absolute;
         left: -120px;
         top: 136px;
+      }
+    }
+    &.image-left {
+      left: 0;
+      top: 776px;
+      .plan__img-2 {
+        left: 130px;
+      }
+      .plan__img-3 {
+        left: 130px;
+        top: 145px;
+      }
+    }
+  }
+  &__plan.plan-2 {
+    margin-top: 120px;
+    display: flex;
+    justify-content: flex-end;
+    .services__plan-steps {
+      &:before {
+        height: 155px;
       }
     }
   }

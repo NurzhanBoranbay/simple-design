@@ -1,0 +1,19 @@
+.design {
+  &__room {
+    .catalog__room {
+      margin-top: 100px;
+      text-align: center;
+    }
+  }
+  &__room-title {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  &__room-subtitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    color: rgba(38, 38, 38, 0.7);
+  }
+}

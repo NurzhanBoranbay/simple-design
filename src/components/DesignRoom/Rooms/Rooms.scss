@@ -1,0 +1,83 @@
+.design {
+  &__room-names {
+    .name__room {
+      margin: 38px 0 43px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      &:not(:first-child) {
+        margin-top: 99px;
+      }
+      div {
+        font-weight: 500;
+        font-size: 30px;
+        line-height: 37px;
+        color: #262626;
+      }
+      .room-line {
+        display: block;
+        width: 84%;
+        height: 1px;
+        background-color: #CBCBCB;
+      }
+    }
+  }
+  &__room-block {
+    .room__images {
+      display: flex;
+      justify-content: space-between;
+      .room__img {
+        width: 363px;
+        img {
+          width: 100%;
+          border-radius: 20px;
+        }
+        .design__choice {
+          margin-top: 33px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          .name__img {
+            padding-left: 24px;
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 24px;
+            color: #353535;
+          }
+          .choice__img {
+            width: 182px;
+            height: 56px;
+            background: #FAFAFA;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 100px;
+            cursor: pointer;
+            transition: all .3s ease;
+            &:hover {
+              background: #facccc;
+            }
+            span {
+              position: relative;
+              display: block;
+              padding-left: 33px;
+              font-weight: 500;
+              font-size: 15px;
+              line-height: 18px;
+              color: #BD7048;
+              &:before {
+                content: '';
+                position: absolute;
+                display: block;
+                width: 21px;
+                height: 23px;
+                left: 0;
+                background: url("../../../images/icons/basket.png") center center/cover no-repeat;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
