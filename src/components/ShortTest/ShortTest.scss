@@ -1,0 +1,19 @@
+@import "src/scss/sample";
+.test {
+  margin-top: 112px;
+  padding: 120px 0;
+  background: url("../../images/img/test-bg.jpg") center center / cover no-repeat;
+  &__title {
+    max-width: 447px;
+    @include weightSizeColorLH(600, 30px, 37px, #FFFFFF);
+  }
+  &__subtitle {
+    max-width: 470px;
+    margin: 27px 0 35px;
+    @include weightSizeColorLH(500, 20px, 24px, rgba(255, 255, 255, 0.7));
+  }
+  .link-red:hover {
+    background-color: #CBCBCB;
+    color: #3B3B3B;
+  }
+}

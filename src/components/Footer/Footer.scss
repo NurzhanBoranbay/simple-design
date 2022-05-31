@@ -1,0 +1,73 @@
+@import "src/scss/sample";
+.footer {
+  &__block {
+    margin: 51px 0 56px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__logo {
+    @include weightSizeColorLH(600, 15px, 18px, #000000);
+    cursor: pointer;
+    .logo__red {
+      color: #BD7048;
+    }
+    .logo__text {
+      display: block;
+      @include weightSizeColorLH(400, 10px, 12px, #000000);
+    }
+  }
+  &__link {
+    display: block;
+    margin-bottom: 10px;
+    @include weightSizeColorLH(500, 15px, 18px, rgba(59, 59, 59, 0.5));
+    transition: all .3s;
+    &:hover {
+      color: #035656;
+    }
+  }
+  &__policy {
+    a {
+      display: block;
+      @include weightSizeColorLH(500, 15px, 18px, rgba(33, 33, 33, 0.5));
+      transition: all .3s;
+      &:hover {
+        color: #035656;
+      }
+    }
+    .privacy {
+      margin-bottom: 6px;
+    }
+  }
+  &__call {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    .call__num {
+      position: relative;
+      padding-left: 39px;
+      @include weightSizeColorLH(600, 15px, 18px, #3B3B3B);
+      &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        display: block;
+        width: 24px;
+        height: 24px;
+        background: url("../../images/icons/phone.svg") center center/cover no-repeat;
+      }
+    }
+    span {
+      @include weightSizeColorLH(500, 15px, 18px, rgba(59, 59, 59, 0.5));
+    }
+  }
+  .author {
+    padding: 40px 0;
+    background: #262626;
+    box-shadow: 0px 4px 37px rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: center;
+    &__text {
+      @include weightSizeColorLH(500, 15px, 18px, #FFFFFF);
+    }
+  }
+}

@@ -1,0 +1,7 @@
+
+@mixin weightSizeColorLH($fw, $fs, $lh, $co) {
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: $lh;
+  color: $co;
+}

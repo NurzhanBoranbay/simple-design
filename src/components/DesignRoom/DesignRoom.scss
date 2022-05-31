@@ -1,3 +1,5 @@
+@import "src/scss/sample";
+
 .design {
   &__room {
     .catalog__room {
@@ -10,10 +12,7 @@
     margin-bottom: 40px;
   }
   &__room-subtitle {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 24px;
     text-align: center;
-    color: rgba(38, 38, 38, 0.7);
+    @include weightSizeColorLH(500, 20px ,24px, rgba(38, 38, 38, 0.7));
   }
 }

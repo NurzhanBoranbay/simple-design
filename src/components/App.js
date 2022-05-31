@@ -6,6 +6,9 @@ import HowWork from "./HowWork/HowWork";
 import Services from "./Services/Services";
 import CheckList from "./CheckList/CheckList";
 import DesignRoom from "./DesignRoom/DesignRoom";
+import ShortTest from "./ShortTest/ShortTest";
+import Questions from "./Questions/Questions";
+import Footer from "./Footer/Footer";
 
 function App() {
    return (
@@ -16,6 +19,9 @@ function App() {
          <Services />
          <CheckList />
          <DesignRoom />
+         <ShortTest />
+         <Questions />
+         <Footer />
       </div>
    );
 }

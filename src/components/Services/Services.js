@@ -15,7 +15,7 @@ const Services = () => {
             <h2 className="services__title title">Наши услуги</h2>
             <div className="services__plan plan-1">
                <div className="services__plan-title">Планировка за 99 000 ₸</div>
-               <div className="services__plan-subtitle">Срок выполнения: 5 дней</div>
+               <div className="services__plan-subtitle">Срок выполнения: <span>5 дней</span></div>
                <div className="services__plan-descr">
                   Мы разработаем для вас уникальное планировочное решение квартиры, которое будет соответствовать как нормам эргономики, так и вашим личным пожеланиям, а также подготовим чертеж для согласования планировки.
                </div>
@@ -41,7 +41,7 @@ const Services = () => {
             <div className="services__plan plan-2">
                <div>
                   <div className="services__plan-title">Дизайн-проект за 199 000 ₸</div>
-                  <div className="services__plan-subtitle">Срок выполнения: 14 дней</div>
+                  <div className="services__plan-subtitle">Срок выполнения: <span>14 дней</span></div>
                   <div className="services__plan-descr">
                      Разработаем планировочное решение вашей квартиры, далее на его основе мы подготовим альбом, состоящий из 12 чертежей, необходимых строителям для ремонта.
                   </div>
